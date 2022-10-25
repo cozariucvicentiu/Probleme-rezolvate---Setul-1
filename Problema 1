@@ -1,0 +1,13 @@
+using System;
+namespace vice0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {float a=float.Parse(Console.ReadLine());
+         float b=float.Parse(Console.ReadLine());
+            Console.WriteLine(-b / a);
+
+            Console.ReadKey();}
+    }
+}
