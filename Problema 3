@@ -1,0 +1,15 @@
+using System;
+namespace vice0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {float n=float.Parse(Console.ReadLine());
+         float k=float.Parse(Console.ReadLine());
+            if(n%k==0)
+            { Console.WriteLine("{0} divide cu {1}", n, k); }
+            else { Console.WriteLine(n + " nu se divide cu "+ k); }
+            Console.ReadKey();
+        }
+    }
+}
