@@ -1,0 +1,23 @@
+using System;
+namespace vice0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {float a=float.Parse(Console.ReadLine());
+         float b=float.Parse(Console.ReadLine());
+         float c=float.Parse(Console.ReadLine());
+            float d = b * b - 4 * a * c;
+            if(d>=0)
+            {
+                float x1 = (-b + (float)Math.Sqrt(d)) / (2 * a);
+                float x2 = (-b - (float)Math.Sqrt(d)) / (2 * a);
+                Console.WriteLine(x1 + " "+ x2);
+
+            }
+            else { Console.WriteLine("x1,x2 nu sunt reale"); }
+
+            Console.ReadKey();
+        }
+    }
+}
