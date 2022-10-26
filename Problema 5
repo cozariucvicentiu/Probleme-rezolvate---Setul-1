@@ -1,0 +1,25 @@
+using System;
+namespace vice0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {int n=int.Parse(Console.ReadLine());
+         int k=int.Parse(Console.ReadLine());
+            int p = 0;
+            while(k>0)
+            {
+                if(n>0)
+                {
+                    p = n % 10;
+                }
+                n = n / 10;
+                k--;
+            }
+            Console.WriteLine(p);
+          
+
+            Console.ReadKey();
+        }
+    }
+}
