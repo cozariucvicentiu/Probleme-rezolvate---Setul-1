@@ -1,0 +1,28 @@
+using System;
+namespace vice0
+{
+    class Program
+    { //n este palindrom?
+        static void Main(string[] args)
+        {
+            int n=int.Parse(Console.ReadLine());
+            int inv = 0;
+            int p = n;
+            while(n>0)
+            {
+                inv = inv * 10 + n % 10;
+                n = n / 10;
+            }
+            if(inv==p)
+            {
+                Console.WriteLine($"n este palindrom");
+            }
+            else
+            {
+                Console.WriteLine($"n nu este palindrom");
+            }
+            
+        }
+           
+    }
+}
