@@ -1,0 +1,26 @@
+using System;
+namespace vice0
+{
+    class Program
+    { //a b c sunt lungimilelaturilor unui triunghi
+        static void Main(string[] args)
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            if(a>0 && b>0 && c>0)
+            {
+                if(a+b>c && a+c>b && b+c>a)
+                {
+                    Console.WriteLine($"{a} {b} {c} " +
+                        $"sunt laturile unui triunghi");
+                }
+                else
+                {
+                    Console.WriteLine($"{a} {b} {c} " +
+                        $" nu sunt laturile unui triunghi");
+                }
+            }
+        }
+    }
+}
