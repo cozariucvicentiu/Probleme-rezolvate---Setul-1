@@ -1,0 +1,28 @@
+using System;
+namespace vice0
+{
+    class Program
+    { //cate nr intregi div cu n
+      //se afla in intervalul [a,b]
+        static void Main(string[] args)
+        {
+            int a=int.Parse(Console.ReadLine());
+            int b=int.Parse(Console.ReadLine());    
+            int n=int.Parse(Console.ReadLine());
+            int nr = 0;
+
+            for(int i=1;i<=b;i++)
+            {
+                if(n%i==0 && a<=i && i<=b )
+                {
+                    nr++;
+                }
+
+            }
+            Console.WriteLine(nr);
+
+            
+        }
+           
+    }
+}
