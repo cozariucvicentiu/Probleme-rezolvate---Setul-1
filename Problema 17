@@ -1,0 +1,68 @@
+using System;
+using System.Globalization;
+
+namespace vice1
+{
+    class Program
+    {// CMMDC
+       
+        static void Main(string[] args)
+        {
+           int a=int.Parse(Console.ReadLine());
+            int b=int.Parse(Console.ReadLine());
+            while(a!=b)
+            {
+                if(a>b)
+                {
+                    a = a - b;
+                }
+                if(b>a)
+                {
+                    b = b - a;
+                }
+            }
+            Console.WriteLine($"CMMDC este {a}");
+            
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+
+
+using System;
+using System.Globalization;
+
+namespace vice1
+{
+    class Program
+    {// CMMMC
+       
+        static void Main(string[] args)
+        {
+           int a=int.Parse(Console.ReadLine());
+            int b=int.Parse(Console.ReadLine());
+            int x, y;
+            x = a;
+            y = b;
+            while(x!=y)
+            {
+                if(x>y)
+                {
+                    x = x - y;
+                }
+                if(y>x)
+                {
+                    y = y - x;
+                }
+            }
+            Console.WriteLine($"CMMMC este {(a * b) / x}");
+            
+            Console.ReadKey();
+
+        }
+    }
+}
