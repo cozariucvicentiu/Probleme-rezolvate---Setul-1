@@ -1,0 +1,22 @@
+        static void p19() 
+         { 
+             int n=int.Parse(Console.ReadLine()); 
+             int[] a = new int[10]; 
+             int temp = n; 
+             int s = 0; 
+             while (temp > 0) 
+             { 
+                 int aux = temp % 10; 
+                 a[aux]++; 
+                 temp /= 10; 
+             } 
+             for(int i=0; i < 10; i++) 
+             { 
+                 if (a[i] != 0) 
+                     s++; 
+             } 
+             if (s == 2) 
+                 Console.WriteLine("Numarul " + n + " este format din doua cifre care se repeta"); 
+             else 
+                 Console.WriteLine("Numarul " + n + " nu este format din doua cifre care se repeta"); 
+         }
